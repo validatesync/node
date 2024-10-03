@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script:wght@700&family=Inter:wght@400;600&family=Montserrat:wght@300;600;700&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Poppins:wght@200;400;600;800&display=swap");
 
 :root {
-  --background-color1: #151d2f;
-  --sec-back: #151d2f;
+  --background-color1: #6610f2;
+  --sec-back: #6610f2;
   --trans: transition: all 0.2s ease 0s;
-  --card-color: #051331;
+  --bs-blue: #0d6efd;
+  --bs-gradient: linear-gradient(180deg, hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 100%, 0));
+  --card-color: #031507;
 }
 * {
   margin: 0;
@@ -21,7 +23,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: rgb(240, 233, 228);
+  color: rgb#000;
 }
 
 html {
@@ -30,7 +32,7 @@ html {
 
 body {
   background-color: var(--background-color1);
-  color: rgba(33, 107, 176, 0.849);
+  color: #efebf9;
   font-family: Montserrat, sans-serif;
   overflow-x: hidden;
   height: 100vh;
@@ -55,7 +57,7 @@ body {
 .section p {
   font-size: 16px;
   line-height: 28px;
-  color: #c3b7c0;
+  color: #e8e6a8;
   margin: 20px 0 40px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -63,7 +65,7 @@ body {
 .btn {
   height: 50px;
   min-width: 200px;
-  background-color: rgb(130, 17, 206);
+  background-color: rgb(212, 94, 14);
   color: rgb(255, 255, 255);
   font-family: Poppins, sans-serif;
   text-transform: capitalize;
@@ -80,7 +82,7 @@ body {
 }
 .btn:hover {
   background: var(--background-color1);
-  border: 2px solid rgb(1, 157, 234);
+  border: 2px solid rgb(224, 4, 183);
 }
 #links {
   margin-top: 0.5rem;
@@ -111,7 +113,7 @@ body {
   height: 50px;
   min-width: 200px;
   background: var(--sec-back);
-  color: #f5f6f9;
+  color: #262822;
   font-family: Poppins, sans-serif;
   text-transform: capitalize;
   border-width: 1px;
@@ -122,11 +124,11 @@ body {
   transition: all 0.2s ease 0s;
   font-size: 16px;
   line-height: 28px;
-  border: 2px solid rgb(1, 157, 234);
+  border: 2px solid rgba(191, 5, 151, 0.972);
   cursor: pointer;
 }
 #btn-select * {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 2rem;
 }
 #btn-select option {
@@ -187,7 +189,7 @@ h2 {
 
   margin-top: 0px auto;
   padding: 3%;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(190, 19, 19, 0.05);
   display: flex;
   align-items: center;
   border-bottom-left-radius: 100%;
@@ -208,7 +210,7 @@ h2 {
   transition: var(--trans);
 }
 .card-icon .first:hover {
-  color: #0c5dd8;
+  color: #020201d3;
 
   border: 2px solid #0c5dd8;
 }
@@ -226,11 +228,10 @@ h2 {
 }
 
 .wallet {
-  background: #151d2f;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .white {
-  background: #151d2f;
+  background: #6610f2;
   margin-top: -2rem;
 }
 
@@ -240,14 +241,14 @@ h2 {
 
 .wallet-section {
   padding-top: 60px ;
-  animation: fade-up 1.7s;
+  animation: fade-up 1.1s;
   display: flex;
   flex-direction: flex;
   justify-content: space-between;
   align-items: center;
 }
 .wallet a {
-  color: rgb(92, 89, 8);
+  color: rgb(185, 185, 169);
   font-weight: 600;
 }
 .wallet-img img {
@@ -262,23 +263,23 @@ h2 {
 
 .wallet-header h1 {
   padding-top: 60px ;
-  animation: fade-up 1.7s;
-  color: rgb(88, 112, 135);
+  animation: fade-up .4s;
+  color: rgb(203, 192, 161);
   -webkit-text-decoration: none;
   text-decoration: none;
   margin: 0;
   padding: 0;
   font-weight: 600;
   font-size: 35px;
-  font-style: italic;
-  font-family: cursive;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 2rem;
 }
 .wallet-header p {
   padding-top: 60px ;
-  animation: fade-up 1.7s;
-  color: rgb(158, 152, 158);
+  animation: fade-up 0.6s;
+  color: rgb(72, 75, 50);
   -webkit-text-stroke: none;
   text-transform: uppercase;
   animation: animate 6s linear infinite;
@@ -302,7 +303,7 @@ h2 {
 }
 .wallet-names-sec {
   padding-top: 125px ;
-  animation: fade-up 1.7s;
+  animation: fade-up 0.8s;
   padding: 0 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -321,7 +322,7 @@ h2 {
   margin-bottom: 2rem;
 }
 .wallet-names-sec h3 {
-  color: rgb(120, 116, 3);
+  color: rgb(189, 189, 124);
   text-align: center;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
@@ -361,8 +362,8 @@ h2 {
 .form-para {
   text-align: center;
   margin-top: 2rem;
-  color: rgb(88, 112, 135);
-  font-weight: 600;
+  color: rgb(32, 33, 4);
+  font-weight: 700;
 }
 .wallet-names {
   position: absolute;
@@ -382,7 +383,7 @@ label {
   height: 5vh;
   color: rgb(150, 150, 150);
   outline: transparent;
-  border: 1px solid #0d6efd;
+  border: 1px solid rgb(73, 24, 136);
   border-radius: 9px;
   padding: 0 1rem;
 }
@@ -403,7 +404,7 @@ label {
 .modal-sec {
   border-radius: 5px;
   margin: 0 auto;
-  background: rgb(186, 182, 181);
+  background: rgb(118, 105, 40);
   width: 100%;
   padding: 3rem;
 
@@ -412,20 +413,20 @@ label {
 }
 
 .modal-sec h3 {
-  color: rgb(20, 40, 72);
+  color: rgba(88, 42, 149, 0.607);
   font-size: 1rem;
   font-family: Montserrat, sans-serif;
   margin-bottom: 3rem;
 }
 .line {
-  background: rgb(44, 101, 181);
+  background: rgb(73, 24, 136);
   width: 100%;
   height: 1px;
 }
 .modal-sec h2 {
   text-align: center;
 
-  color: rgb(186, 182, 181);
+  color: rgb(118, 105, 40);
   font-size: 1rem;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
@@ -441,7 +442,7 @@ label {
   height: 5vh;
   color: rgb(129, 128, 128);
   outline: transparent;
-  border: 1px solid #0d6efd;
+  border: 1px solid rgb(73, 24, 136);
   border-radius: 9px;
   padding: 0 1rem;
 }
@@ -451,7 +452,7 @@ label {
   height: 5vh;
   color: rgb(145, 144, 144);
   outline: transparent;
-  border: 1px solid #0d6efd;
+  border: 1px solid rgb(73, 24, 136);
   border-radius: 9px;
   padding: 0 1rem;
 }
@@ -463,7 +464,7 @@ label {
   height: 5vh;
   outline: transparent;
   color: white;
-  background: #0e3b83;
+  background: rgb(73, 24, 136);
   border-radius: 9px;
   margin-bottom: 1rem;
 }
@@ -471,7 +472,7 @@ label {
 .cancel {
   padding: 7px;
   color: rgb(255, 255, 255);
-  background-color: rgb(136, 40, 174);
+  background-color: rgb(51, 10, 67);
   border: none;
   float: right;
 }
@@ -511,7 +512,7 @@ label {
     max-width: 700px;
   }
   .card {
-    background: #151d2f;
+    background: #6610f2;
     width: 500px;
     height: 230px;
     padding: 15px;
@@ -547,7 +548,7 @@ label {
 
   .wallet-names-sec {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -580,7 +581,7 @@ label {
 }
 
 #preloader {
-  background: #061a45 url(./moving_dots_1.gif) no-repeat center center;
+  background: #30065d url(./moving_dots_1.gif) no-repeat center center;
   background-size: 60%;
   height: 100vh;
   width: 100%;
@@ -645,7 +646,7 @@ label {
 }
 
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:450px) {
   .card {
     width: 90%;
     height: 90%;
